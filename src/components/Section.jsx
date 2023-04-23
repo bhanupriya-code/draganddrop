@@ -3,6 +3,7 @@ import Header from "./Header"
 import Tasks from "./Tasks"
 
 
+
 const Section = ({s, tasks, setTasks, todos, inProgress, completed}) => {
 
  
@@ -52,7 +53,7 @@ if(s === "completed"){
 
 
 
-    return(<div ref={drop} className={`w-64 rounded-md p-2 ${isOver ? "bg-slate-200" : "" }`}>
+    return(<div ref={drop} className={`classes.task w-64 rounded-md p-2 ${isOver ? "bg-slate-200" : "" }`}>
         <Header text={text} col = {col} count = {tasksToMap.length}/>
         {tasksToMap.length > 0 && tasksToMap.map((eachT) => <Tasks key={eachT.id}  task = {eachT} tasks= {tasks} setTasks = {setTasks} />) }
         </div>)

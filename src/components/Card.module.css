@@ -1,0 +1,9 @@
+.card {
+    height: 60vh;
+    width: 100wh;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: rgb(245, 239, 239);
+    box-shadow: 5px 5px 5px rgb(247, 245, 245);
+    
+  }
